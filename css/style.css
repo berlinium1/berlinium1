@@ -51,9 +51,9 @@ article p {
 
 article div {
     display: flex;
-    flex-direction: column;
     align-items: center;
     margin-bottom: .5em;
+    flex-direction: column;
 }
 
 header div, footer div {
@@ -87,9 +87,10 @@ header, footer, article, nav, aside, .logo {
     border-top: 2px dashed black;
 }
 
-article div {
+/* article div {
     border: 2px dashed rgb(18, 112, 136);
 }
+*/
 
 aside {
     border-left: 2px dashed black;
@@ -136,43 +137,15 @@ img.ph {
     max-height: 50px;
     max-width: 50px;
 }
-/* END */
 
-
-/* Sidebar settings */
-.widget {
-    padding: 20px 30px;
-    background: beige;
-    font-family: 'Patrick Hand', cursive;
+.sliderArticle {
+    max-width: 100%;
+    min-height: 90%;
+    bottom: 0%;
+    background-color: white;
+    padding: 10px;
+    text-align: left;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
   }
-  .widget-title {
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #222;
-    font-size: 16px;
-    padding-left: 15px;
-    margin-bottom: 15px;
-    border-left: 2px solid #b99d61;
-  }
-  .widget-list {
-    padding: 0;
-    list-style: none;
-  }
-  .widget-list a:before {
-    content: "\2014";
-    margin-right: 14px;
-  }
-  .widget-list a {
-    text-decoration: none;
-    outline: none;
-    display: block;
-    padding: 6px 0; 
-    letter-spacing: 0px;
-    font-weight: 300;
-    color: rgb(72, 39, 180);
-    transition: .3s linear;
-  }
-  .widget-list a:hover {
-    color: #b99d61;
-}
-/* END */

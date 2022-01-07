@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/slider.css">
     <title>Document</title>
 </head>
 <body>
@@ -16,16 +18,21 @@
     </header>
     <div id="main">
         <nav>   
-            <div class="widget">
-                <h3 class="widget-title">Navigation</h3>
-                <ul class="widget-list">
-                  <li><a href="index.html">Main</a></li>
-                  <li><a href="basics.html">Basics</a></li>
-                  <li><a href="lenses.html">Lenses Types</a></li>
-                  <li><a href="decisions.html">How to Choose a Camera</a></li>
-                  <li><a href="pressets.html">My Pressets</a></li>
-                  <li><a href="accessories.html">Camera Accessories</a></li>
-                </ul>
+            <div class="burger">
+                <input type="checkbox" id="check_menu">
+                <label for="check_menu"><h5>Navigation</h5></label>
+                <div class="burgerLine l1"></div>
+                <div class="burgerLine l2"></div>
+                <div class="burgerLine l3"></div>
+                <div class="burgerLine l4"></div>
+                <nav class="menu_links">
+                    <a href="index.html">Main</a>
+                    <a href="basics.html">Basics</a>
+                    <a href="lenses.html">Lenses Types</a>
+                    <a href="decisions.html">How to Choose a Camera</a>
+                    <a href="pressets.html">My Pressets</a>
+                    <a href="accessories.html">Camera Accessories</a>
+                </nav>
             </div>
         </nav>
         <div class="container">
@@ -33,54 +40,34 @@
                 <h2>Download my pressets(free)</h2>
             </div>
             <div class="articlepart">
-                <article>
-                    <div>
-                        <h2>"Warm Detalized Spider" Presset</h2>
-                        <a href="assets/pressets/awArm.xmp" width="200" height="125" alt="manualset" class="manual" download><img src="assets/example1.jpg" width="512" height="341" class="manual"></a>
-                        Click on a photo to download
-                    </div>
-                    <div>
-                        <h2>"Sea, Girl & Sun" Presset</h2>
-                        <a href="assets/pressets/SeaSun.xmp" width="200" height="125" alt="manualset" class="manual" download><img src="assets/example2.jpg" width="512" height="341" class="manual"></a>
-                        <h5>Click on a photo to download</h5>
-                    </div>
-                    <div>
-                        <h2>"Dark Noir" Presset</h2>
-                        <a href="assets/pressets/Brandenburg.xmp" width="200" height="125" alt="manualset" class="manual" download><img src="assets/1904.jpg" width="512" height="341" class="manual"></a>
-                        <h5>Click on a photo to download</h5>
-                    </div>
+                <div class="sliderArticle">
 
-                    <div>
-                        <h2>"Macro-Moss" Presset</h2>
-                        <a href="assets/pressets/1975.xmp" width="200" height="125" alt="manualset" class="manual" download><img src="assets/1911.jpg" width="512" height="341" class="manual"></a>
-                        <h5>Click on a photo to download</h5>
-                    </div>
+                    <div class="slider">
+                        <div class="slider_feed">
 
-                    <div>
-                        <h2>"Horse With No Name" Presset</h2>
-                        <a href="assets/pressets/EXPERIMENT.xmp" width="200" height="125" alt="manualset" class="manual" download><img src="assets/12.jpg" width="512" height="341" class="manual"></a>
-                        <h5>Click on a photo to download</h5>
-                    </div>
+                            <input type="radio" name="r" id="r1" checked="">
+                            <input type="radio" name="r" id="r2">
+                            <input type="radio" name="r" id="r3">
+                            <input type="radio" name="r" id="r4">
 
-                    <div>
-                        <h2>"Forest Path" Presset</h2>
-                        <a href="assets/pressets/BEAUTY.xmp" width="200" height="125" alt="manualset" class="manual" download><img src="assets/178.jpg" width="512" height="341" class="manual"></a>
-                        <h5>Click on a photo to download</h5>
-                    </div>
+                            <div class="photograph n1"><img src="/assets/40.jpg"></div>
+                            <div class="photograph"><img src="/assets/IMG_9392.jpg"></div>
+                            <div class="photograph"><img src="/assets/1911.jpg"></div>
+                            <div class="photograph"><img src="/assets/example1.jpg"></div>
 
-                    <div>
-                        <h2>"Blizzard" Presset</h2>
-                        <a href="assets/pressets/НОВГОРОД.xmp" width="200" height="125" alt="manualset" class="manual" download><img src="assets/IMG_9392.jpg" width="512" height="341" class="manual"></a>
-                        <h5>Click on a photo to download</h5>
-                    </div>
+                        </div>
 
-                    <div>
-                        <h2>"River & Bicycle" Presset</h2>
-                        <a href="assets/pressets/fireplace.xmp" width="200" height="125" alt="manualset" class="manual" download><img src="assets/40.jpg" width="512" height="341" class="manual"></a>
-                        <h5>Click on a photo to download</h5>
+                        <div class="slider_buttons">
+
+                            <label for="r1" class="sliderBut"></label>
+                            <label for="r2" class="sliderBut"></label>
+                            <label for="r3" class="sliderBut"></label>
+                            <label for="r4" class="sliderBut"></label>
+
+                        </div>
                     </div>
                     
-                </article>
+                </div>
                 <aside>
                     <div class="widget">
                         <h3 class="widget-title">Contact me:</h3>
